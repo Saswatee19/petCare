@@ -472,21 +472,13 @@ html {
   text-align: center;
 }
 
-.section-subtitle {
-  color: #ea8c55;
-  font-size: 13px;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
 .section-title {
   font-size: 56px;
   font-weight: 800;
   text-align: center;
   color: #2a1520;
   margin-bottom: 16px;
+  margin-top: 200px;
 }
 
 .section-sub {
@@ -507,7 +499,7 @@ html {
 .testimonials-grid {
     width: 90%;
     max-width: 1400px;
-    margin: 60px auto 0;
+    margin: 60px auto 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -587,6 +579,8 @@ html {
   color: rgba(255,255,255,0.75) !important;
   font-size: 13px;
   background: transparent !important;
+}
+
 /* Call-To-Action */
 
 .booking {
@@ -639,6 +633,11 @@ html {
   text-decoration: none;
   transition: transform 0.15s, box-shadow 0.2s;
   box-shadow: 0 4px 16px rgba(135,245,251,0.3);
+}
+
+.btn-aqua:hover { 
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(135,245,251,0.45); 
 }
 
 .btn-outline-white {
@@ -892,6 +891,8 @@ footer *,
 .wrapper-2{
   display: flex;
 }
+
+
 @media (max-width: 480px) {
   
   .navright {
@@ -989,7 +990,80 @@ footer *,
     text-align: center;
   }
 
+
+  /* TESTIMONIALS  */
+  .testimonials-section {
+    padding: 80px 24px;
+  }
+  .section-title {
+    font-size: 36px;
+    margin-top: 80px;
+  }
+  .section-sub {
+    font-size: 15px;
+  }
+  .testimonials-grid {
+    width: 100%;
+    margin: 40px auto 80px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .testimonial-card {
+    padding: 24px;
+  }
+
+
+  /* CTA */
+  .booking {
+    margin: 0 16px 48px;
+    padding: 40px 20px;
+  }
+  .booking h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  .booking p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+  .booking-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-aqua,
+  .btn-outline-white {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+
+  /* FOOTER */
+  footer {
+    padding: 48px 24px 32px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-brand p,
+  .newsletter-desc {
+    max-width: 100%;
+  }
+  .footer-newsletter {
+    max-width: 100%;
+  }
+  .newsletter-form {
+    width: 100%;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
 }
+
 
 @media (max-width: 1250px) and (min-width: 481px){
   .navright {
@@ -1085,6 +1159,54 @@ footer *,
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+    /* TESTIMONIALS */
+  .testimonials-section {
+    padding: 100px 40px;
+  }
+  .section-title {
+    font-size: 44px;
+    margin-top: 120px;
+  }
+  .testimonials-grid {
+    width: 100%;
+    margin: 50px auto 120px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+
+  /* CTA */
+  .booking {
+    margin: 0 40px 60px;
+    padding: 56px 32px;
+  }
+  .booking h2 {
+    font-size: 2.2rem;
+  }
+  .booking p {
+    max-width: 600px;
+  }
+  .booking-actions {
+    justify-content: center;
+  }
+
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .footer-newsletter {
+    max-width: 100%;
+  }
+  .footer-brand p,
+  .newsletter-desc {
+    max-width: 100%;
+  }
+  .footer-bottom {
+    gap: 16px;
   }
 
 }
