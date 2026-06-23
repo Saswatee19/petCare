@@ -81,6 +81,8 @@ html {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 .logo-text{
     font-size: 30px;

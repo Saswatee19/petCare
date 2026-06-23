@@ -36,3 +36,5 @@ let preloader = document.querySelector(".preloader");
 setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
 }, 2000)
+
+
