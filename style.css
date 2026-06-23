@@ -262,7 +262,8 @@ html {
 
 .btn:hover {
   transform: translateY(-4px); 
-  box-shadow: 0 10px 20px rgba(246, 3, 3, 0.3); 
+  box-shadow: 0 10px 20px rgba(246, 3, 3, 0.3);
+  color: #87f5fb; 
 }
 .btn:active {
   transform: translateY(1px); 
@@ -278,31 +279,29 @@ html {
   gap: 3.5em;
 }
 .dog-container{
-  margin-top: 4%;
-  margin-left: 4%;
-  height: 65%;
-  width: 35%;
+  margin-top: 6%;
+  margin-left: -10%;
+  height: 66%;
+  width: 39%;
   overflow: hidden;
 }
 .dog-container img{
   margin-top: -170px;
-  margin-left: -175px;
-  /* background-color: aliceblue; */
+  margin-left: -186px;
   height: 50em;
 }
 .cat-container{
-  /* margin-left: 30% ; */
-  margin-left: 0.5%;
+  margin-top: -2%;
+  margin-left: -5%;
   height: 70%;
   width: 39%;
   overflow: hidden;
 }
 .cat-container img{
   object-fit: fill;
-  margin-top: -34px;
-  margin-left: 35px;
+  margin-top: -50px;
+  margin-left: -5em;
   margin-right: 20px;
-  /* background-color: aliceblue; */
   height: 35em;
   transform: scaleX(-1);
 }
@@ -311,7 +310,7 @@ html {
   z-index: 10;
   opacity: 0;
   margin-top: 10%;
-  margin-left: 30%;
+  margin-left: 10%;
   position: absolute;
   background: #ffffff;
   border-radius: 24px;
@@ -381,6 +380,7 @@ html {
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 20px;
+  box-shadow: 0 4px 6px #68b0f7 ;
   animation: floatAnimation 4s ease-in-out infinite;
   transition: opacity 0.6s ease-in-out, filter 0.5s ease-in-out;
 }
@@ -500,8 +500,9 @@ html {
 .reviewer,
 .reviewer div,
 .reviewer-name,
-.reviewer-pet {
-    background: transparent !important;
+.reviewer-pet 
+{
+background: transparent !important;
 }
 
 .testimonials-grid {
@@ -588,6 +589,7 @@ html {
   font-size: 13px;
   background: transparent !important;
 /* Call-To-Action */
+}
 
 .booking {
   background: #a53860 !important;
@@ -836,8 +838,6 @@ footer *,
   opacity: 0.8;
 }
 
-/* more code below */
-
 .hamburger {
   display: none;
 }
@@ -847,6 +847,7 @@ footer *,
   align-items: center;
   justify-content: center;
   transition: transform 0.4s ease-in-out;
+  margin-left: -10em;
 }
 .info-val{
   font-size: xx-large;
@@ -972,104 +973,6 @@ footer *,
   }
    .footer-info{
     margin-left: -1%;
-    display: grid;
-    grid-template-columns: repeat(2, 8fr);
-    grid-template-rows: repeat(2, 8fr);
-    gap: 15px;
-    width: 160%;
-    padding: 10px;
-   }
-   .info-box{
-    position: static;
-    top: auto;
-    left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-}
-
-@media (max-width: 1250px) and (min-width: 481px){
-  .navright {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-    position: fixed;
-    right: 20px; 
-    top: 1.5em;
-    z-index: 1001;
-    cursor: pointer;
-  }
-  .close-icon{
-    margin-right: 90%;
-  }
-  .hamburger-text {
-    z-index: 1002;
-    position: fixed;
-    top: 0.1em;
-    right: -100%; 
-    width: 250px;
-    height: 100vh;
-    background-color: #f1e4f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.5em;
-    font-size: x-large;
-    box-shadow: -2px 0 5px rgba(243, 4, 4, 0.1);
-    transition: right 0.3s ease-in-out;
-  }
-  .side{
-    gap: 5em;
-    border-bottom: 0.5px solid #1a111a;
-  }
-  .side:hover{
-    color: #ff5733;
-    font-weight: 700;
-  }
-  .hamburger-text.open{
-    right: 0%;
-  }
-  .hamburger-icon.fade_out{
-    display: none;
-  }
-  
-  .main{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0%;
-  }
-  .mainright img{
-    display: none;
-  }
-  .pet-card{
-    position: static;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    margin-left: -30%;
-    max-width: 110%;
-    opacity: 1;
-  }
-  .footer-info{
-    position: static;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
-
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-   .footer-info{
-    margin-left: 0%;
     display: grid;
     grid-template-columns: repeat(2, 8fr);
     grid-template-rows: repeat(2, 8fr);
