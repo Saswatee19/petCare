@@ -113,6 +113,7 @@ html {
     align-items: center;
     color: #2a1520;
     transition: color 0.3s ease;
+    text-decoration: none;
     
 }
 .del span{
@@ -933,6 +934,11 @@ footer *,
     box-shadow: -2px 0 5px rgba(243, 4, 4, 0.1);
     transition: right 0.3s ease-in-out;
     box-sizing: border-box;
+    
+  }
+  .hamburger-text a.side{
+    text-decoration: none;
+    color: inherit;
   }
   .side{
     gap: 5em;
@@ -1000,6 +1006,7 @@ footer *,
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-left: 0;
   }
   .info-text{
     font-size: medium;
