@@ -11,6 +11,54 @@ body, html {
     height: 100%;
     background-color: #111;
     }
+    .preloader{
+    position: fixed;
+    background-color: #a53860;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.bird{
+    border-top: 2px solid #f1e4f3;
+    border-right: 2px solid #f1e4f3;
+    border-left: 2px solid #f1e4f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.dog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.cat{
+    border-top: 2px solid #f1e4f3;
+    border-right: 2px solid #f1e4f3;
+    border-left: 2px solid #f1e4f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.preloader-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 
 .all{
     display: flex;
@@ -360,7 +408,7 @@ footer *,
     margin-right: 90%;
   }
   .hamburger-text {
-    z-index: 1002;
+    z-index: 1003;
     position: fixed;
     top: 0;
     right: -100dvw; 
