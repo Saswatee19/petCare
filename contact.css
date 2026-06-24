@@ -684,6 +684,8 @@ footer *,
 .contact-info-grid{
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
 }
 .contact-layout-main {
     padding: 80px 1rem 40px;
@@ -703,7 +705,9 @@ footer *,
     font-size: 1.5rem;
 }
 .contact-card {
+  width: 100%;
     padding: 1.5rem 1rem;
+    box-sizing: border-box;
 }
 .contact-card .info-icon {
     font-size: 1.5rem;
@@ -711,6 +715,10 @@ footer *,
 }
 .contact-card h3 {
     font-size: 1.2rem;
+}
+#visit-clinic-card{
+  background-color: #ffffff !important;
+  color: #2a1520;
 }
 .transparent-form input,
 .transparent-form textarea,
