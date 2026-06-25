@@ -73,14 +73,17 @@ html {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 2.5rem;
+  padding: 1.5rem;
   transition: display 0.3s ease-in-out;
 }
 .confirm img{
-  max-width: 80%;
-  max-height: 200px;
+  display: block;
+  max-width: 60%;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   margin-top: 1.5rem;
+  flex-shrink: 0;
 }
 .content{
   padding-top: 20%;
