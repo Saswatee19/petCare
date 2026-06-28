@@ -136,6 +136,9 @@ html {
    opacity: 1;
    transition: opacity 0.7s ease;
 }
+.hamburger {
+  display: none;
+}
 .main {
   display: flex;
   width: 75vh;
@@ -1215,9 +1218,7 @@ footer *,
   opacity: 0.8;
 }
 
-.hamburger {
-  display: none;
-}
+
 .info-box{
   display: flex;
   flex-direction: column;
