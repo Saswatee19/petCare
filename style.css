@@ -1401,16 +1401,28 @@ footer *,
     height: auto;
     font-size: 2.5rem;
   }*/
+/* --- THE NUCLEAR HEADER FIX --- */
   .text-wrapper {
-    width: 100%;
-    height: 120px; /* Forces the box open so the text isn't hidden */
-    display: block; 
+    width: 100% !important;
+    height: 110px !important;
+    display: block !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
 
-  .swap-link .line {
-    line-height: 1.1; /* Overrides the massive 80px desktop height */
-    font-size: 2.5rem; /* Restores the correct mobile font size */
+  .text-wrapper .line {
+    line-height: 1.1 !important;
+    font-size: 2.5rem !important;
+    display: flex !important; 
+    flex-direction: column !important;
   }
+
+  /* This forces AOS to stop hiding the text on mobile */
+  .text-wrapper span[data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  /* ------------------------------ */
 
   .swap-link{
     font-size: 2.5rem;
