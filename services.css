@@ -300,6 +300,7 @@ body {
   
   .service-image {
     width: 100%;
+    flex: none;
   }
   
   .service-image img {

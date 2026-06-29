@@ -1345,7 +1345,7 @@ footer *,
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .preloader .fa-5x {
         font-size: 3.5em !important; 
     }

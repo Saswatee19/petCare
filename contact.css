@@ -630,7 +630,7 @@ footer *,
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
   .confirm{
     padding: 1.5rem;
