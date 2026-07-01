@@ -174,10 +174,10 @@ document.addEventListener("preloaderFinished", () => {
 
     document.addEventListener("preloaderFinished", () => {
   const counters = [
-    { element: document.querySelector("#pets-num"), target: 1500, suffix: "+" },
-    { element: document.querySelector("#doctors-num"), target: 50, suffix: "+" },
-    { element: document.querySelector("#centers-num"), target: 10, suffix: "+" },
-    { element: document.querySelector("#years-num"), target: 20, suffix: "+" }
+    { element: document.querySelector("#pets-num"), target: 900, suffix: "+" },
+    { element: document.querySelector("#doctors-num"), target: 120, suffix: "+" },
+    { element: document.querySelector("#centers-num"), target: 90, suffix: "+" },
+    { element: document.querySelector("#years-num"), target: 50, suffix: "+" }
   ];
 
   counters.forEach(counter => {
@@ -186,7 +186,7 @@ document.addEventListener("preloaderFinished", () => {
     let currentCount = 0;
     
     
-    const customIntervalSpeed = 1000 / counter.target; //did this to measure which num needs what time interval for incrementing bcoz large num should hike in less time 
+    const customIntervalSpeed = 2000 / counter.target; //did this to measure which num needs what time interval for incrementing bcoz large num should hike in less time 
 
     const intervalId = setInterval(() => {
       currentCount++;

@@ -13,6 +13,11 @@
   --wt-l:700;
   --wt-m:500;
   --wt-s:400;
+
+  --bg-color: #e8ccad;
+  --bg-white: #faf4ec;
+  --bg-blue: #3a8a82;
+  --bg-text-color: #3d1f00;
 }
 body{
   font-family: var(--font-s) ;
