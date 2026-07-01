@@ -13,9 +13,19 @@ html {
   scroll-behavior: smooth;
   
 }
+:root{
+  --font-l: "Galindo", sans-serif;
+  --font-m: "Calistoga", sans-serif;
+  --font-s: "Sora", sans-serif;
+
+  /* font weights */
+  --wt-l:700;
+  --wt-m:500;
+  --wt-s:400;
+}
 .preloader{
     position: fixed;
-    background-color: #a53860;
+    background-color: #1f0707;
     top: 0;
     left: 0;
     right: 0;
@@ -24,9 +34,6 @@ html {
     z-index: 9999;
 }
 .bird{
-    border-top: 2px solid #f1e4f3;
-    border-right: 2px solid #f1e4f3;
-    border-left: 2px solid #f1e4f3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,9 +51,6 @@ html {
     display: none;
 }
 .cat{
-    border-top: 2px solid #f1e4f3;
-    border-right: 2px solid #f1e4f3;
-    border-left: 2px solid #f1e4f3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +63,53 @@ html {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.confirm{
+  position: fixed;
+  left: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background-color: #a53860;
+  color: #fcfefe;
+  display: none;
+  font-size: medium;
+  font-weight: 700;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  transition: display 0.3s ease-in-out;
+}
+.confirm img{
+  display: block;
+  max-width: 60%;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: 1.5rem;
+  flex-shrink: 0;
+}
+.content{
+  padding-top: 20%;
+}
+.short-msg {
+  display: none;
+}
+
+.error1{
+  display: none;
+  color: rgb(242, 248, 83);
+}
+.error2{
+  display: none;
+  color: rgb(242, 248, 83);
+}
+.error3{
+  display: none;
+  color: rgb(242, 248, 83);
 }
 
 .navbar {
@@ -76,6 +127,9 @@ html {
   border-bottom: 1px solid rgba(74, 21, 75, 0.15);
   
 }
+.navright span{
+  margin-right: 0.2em;
+}
 .logo{
     display: flex;
     gap: 10px;
@@ -85,6 +139,7 @@ html {
     color: inherit;
 }
 .logo-text{
+    font-family: var(--font-l);
     font-size: 30px;
     transition: transform 0.2s ease;
 }
@@ -159,8 +214,9 @@ main {
 }
 
 .appointment-title {
+    font-family: var(--font-l);
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: var(--wt-m);
     color: #2a1520;
     margin-bottom: 0.6rem;
     letter-spacing: -0.5px;
@@ -242,11 +298,12 @@ main {
 }
 
 .appointment-form legend {
+  font-family: var(--font-l);
   background-color: #2a1520;
   color: #f1e4f3;
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
-  font-weight: 700;
+  font-weight: var(--wt-m);
   font-size: 1.1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
@@ -391,6 +448,7 @@ footer *,
 }
 
 .footer-logo {
+  font-family: var(--font-l);
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff !important;
@@ -587,7 +645,19 @@ footer *,
   display: flex;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+  /* .content{
+    display: none;
+  } */
+  /* .short-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .confirm img{
+    width: 50dvh;
+  }
   
   .navright {
     display: none;

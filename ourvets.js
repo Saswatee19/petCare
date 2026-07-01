@@ -18,17 +18,29 @@ let tm4 = setTimeout(()=>{
     cat.style.display = "flex"
 }, 1600);
 
-
 let preloader = document.querySelector(".preloader");
 
 setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
-    AOS.init({  //learn
+    AOS.init({ 
         duration: 1200, 
         once: true, 
         startEvent: 'preloaderFinished' 
     }); 
 
     
-    document.dispatchEvent(new Event('preloaderFinished'));  //learn this listener
+    document.dispatchEvent(new Event('preloaderFinished')); 
 }, 2000);
+
+let hamburger_icon = document.querySelector(".hamburger-icon");
+let close_icon = document.querySelector(".close-icon");
+let hamburger_text = document.querySelector(".hamburger-text");
+
+hamburger_icon.addEventListener('click', ()=>{
+    hamburger_text.classList.add('open');
+    hamburger_icon.classList.add('fade_out');
+})
+close_icon.addEventListener('click', () => {
+    hamburger_text.classList.remove('open');
+    hamburger_icon.classList.remove('fade_out');
+});

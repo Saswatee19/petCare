@@ -1,11 +1,8 @@
 :root {
-    --berry-crush: #8a1955;
-    --berry-crush-light: #a9256b;
-    --lavender: #e6e6fa;
-    --lavender-light: #f5f5fc;
-    --text-dark: #2d2d35;
-    --text-light: #5e5e6e;
-
+  --berry-crush: #7A1448;
+  --lavender-veil: #E8DEEC;
+  --text-dark: #2C2C2C;
+  --white: #FFFFFF;
 
   --font-l: "Galindo", sans-serif;
   --font-m: "Calistoga", sans-serif;
@@ -15,20 +12,16 @@
   --wt-l:700;
   --wt-m:500;
   --wt-s:400;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Sora', sans-serif;
-    background-color: #f1e4f1;
-    color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora', sans-serif;
+  background-color: var(--lavender-veil);
+  color: var(--text-dark);
 }
+
 .preloader{
     position: fixed;
     background-color: #1f0707;
@@ -70,7 +63,6 @@ body {
     visibility: hidden;
     pointer-events: none;
 }
-
 .navbar {
   width: 100%;
   position: fixed;
@@ -151,87 +143,90 @@ body {
 .hamburger {
   display: none;
 }
-
-.page-header {
-    font-family: var(--font-l);
-    text-align: center;
-    color: var(--berry-crush);
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    font-weight: var(--wt-m);
+.navright span{
+  margin-right: 0.2em;
+}
+.services-page {
+  padding: 80px 20px;
 }
 
-.vets-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    max-width: 480px;
-    margin: 0 auto;
+.services-container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.vet-card {
-    background-color: #ffffff;
-    width: 100%;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(138, 25, 85, 0.08);
-    border-bottom: 6px solid var(--lavender);
-    transition: all 0.3s ease;
-    position: relative;
-    margin-bottom: 40px;
+.services-title {
+  font-family: var(--font-l);
+  text-align: center;
+  color: var(--berry-crush);
+  font-size: 2.8rem;
+  font-weight: var(--wt-m);
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.vet-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(138, 25, 85, 0.2);
-    border-bottom-color: var(--berry-crush);
-}
-
-.vet-card img {
-    width: 100%;
-    max-width: 480px;
-    object-fit: cover;
-    display: block;
-}
-
-.card-content {
-    padding: 2rem;
-}
-
-.vet-name {
-    font-family: var(--font-l);
-    color: var(--berry-crush);
-    font-size: 1.75rem;
-    font-weight: var(--wt-m);
-    margin-bottom: 0.25rem;
-}
-
-.vet-specialty {
-    color: var(--text-dark);
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-}
-
-.vet-experience {
-    color: var(--berry-crush-light);
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.vet-intro {
-    color: var(--text-light);
-    font-size: 1rem;
-    font-weight: 300;
+.service-row {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  scroll-margin-top: 40px;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
 
-@media screen and (max-width: 500px) {
-    .navright {
+.service-row:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(122, 20, 72, 0.15);
+  border: 2px solid #7A1448;
+  transition: transform 0.3s ease-in, border 0.3s ease-in;
+}
+
+.service-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+}
+
+.service-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.service-content h3 {
+  font-family: var(--font-l);
+  color: var(--berry-crush);
+  font-size: 2rem;
+  font-weight: var(--wt-m);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.service-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+
+@media (max-width: 500px) {
+  .navright {
     display: none;
   }
 
@@ -289,33 +284,35 @@ body {
     /*font-size: 2.5rem;*/
     font-size: 2.2rem;
   }
-    .page-header {
-        font-size: 2rem; 
-        margin-bottom: 2rem;
-        padding: 0 1rem;
-    }
-
-    .vets-container {
-        width: 100%;
-        padding: 0 1.25rem; 
-        gap: 1.5rem; 
-    }
-
-    .card-content {
-        padding: 1.25rem; 
-    }
-
-    .vet-name {
-        font-size: 1.4rem; 
-    }
-
-    .vet-card img {
-        width: 100%;      
-        height: auto;      
-        max-width: 100%;  
-    }
-
-    .vet-intro {
-        font-size: 0.95rem; 
-    }
+  .services-page {
+    padding: 50px 15px;
+  }
+  
+  .services-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .service-row, 
+  .service-row:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .service-image {
+    width: 100%;
+    flex: none;
+  }
+  
+  .service-image img {
+    height: 250px;
+  }
+  
+  .service-content {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .service-content h3 {
+    font-size: 1.6rem;
+  }
 }

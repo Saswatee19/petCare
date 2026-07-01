@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Vets</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Galindo&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="ourvets.css">
-    <link rel="icon" href="./images/pawCareLogo2.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Galindo&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/pawCareLogo2.png">
 </head>
+<body> 
 
-<!-- preloader -->
-
-    <div class="preloader">
-       <div class="bird"><i class="fa-solid fa-dove fa-5x fa-beat" style="color: rgb(241, 228, 243)"></i></div>
-       <div class="dog"><i class="fa-solid fa-dog fa-5x fa-beat" style="color: rgb(241, 228, 243);"></i></div>
-       <div class="cat"><i class="fa-solid fa-cat fa-5x fa-beat" style="color: rgb(241, 228, 243);"></i></div>
-    </div>
-
+  <!-- preloader -->
+  <div class="preloader">
+      <div class="bird"><i class="fa-solid fa-dove fa-5x fa-beat" style="color: rgb(241, 228, 243)"></i></div>
+      <div class="dog"><i class="fa-solid fa-dog fa-5x fa-beat" style="color: rgb(241, 228, 243);"></i></div>
+      <div class="cat"><i class="fa-solid fa-cat fa-5x fa-beat" style="color: rgb(241, 228, 243);"></i></div>
+  </div>
 	<!-- navbar -->
 
     <header class="navbar">
         <a href="index.html" class="logo">
                  <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg class="logo-icon" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xml:space="preserve">
 <g>
@@ -130,61 +128,80 @@
 
 <body>
 
-    <div data-aos="zoom-out" data-aos-duration="1400" class="page-header">Our Vets</div>
+  <section class="services-page">
+    <div class="services-container">
+      <h2 data-aos="zoom-out" data-aos-duration="1400" class="services-title">Services</h2>
 
-    <div class="vets-container">
-        
-        <div class="vet-card">
-            <img src="Images/Veterinary Dentist.png" alt="vet1">
-        <div data-aos="fade-up-right" data-aos-duration="1200" class="vet-card" id="saswatee">
-            <img src="Images/vet1.png" alt="vet1">
-            <div class="card-content">
-                <h2 class="vet-name">Dr. Saswatee Mishra</h2>
-                <p class="vet-specialty">Feline Medicine Specialist</p>
-                <p class="vet-experience">15 Years Experience</p>
-                <p class="vet-intro">Dr. Mishra is incredibly passionate about cat health, specializing in feline internal medicine and behavioral therapy. She believes in creating a low-stress environment for all her purring patients.</p>
-            </div>
+      <div data-aos="fade-up-left" data-aos-duration="1400" id="wellness" class="service-row">
+        <div class="service-image">
+          <img src="Images/wellness.png" alt="Veterinarian examining a dog">
         </div>
+        <div class="service-content">
+          <h3>Wellness Check-Ups</h3>
+          <p>At PawCare Veterinary Hospital, our routine wellness check-ups form the foundation of your pet's lifelong health and happiness. Our team of expert doctors meticulously examines your furry family members from nose to tail during these visits. We believe every tail-wag and purr matters, so we use these comprehensive exams to ensure your pet is thriving at every life stage. These check-ups allow us to catch potential health issues early, utilizing the modern resources of our state-of-the-art facilities. With infinite patience and love, we make these routine visits a stress-free and highly positive experience for your beloved companions.</p>
+        </div>
+      </div>
 
-        <div class="vet-card">
-            <img src="Images/Veterinary Surgeon.png" alt="vet2">
-        <div data-aos="fade-up-left" data-aos-duration="1200" class="vet-card" id="pratik">
-            <img src="Images/vet2.png" alt="vet2">
-            <div class="card-content">
-                <h2 class="vet-name">Dr. Pratik K Sahoo</h2>
-                <p class="vet-specialty">Veterinary Surgeon</p>
-                <p class="vet-experience">12 Years Experience</p>
-                <p class="vet-intro">Dr. Sahoo heads our surgical department, bringing expert precision in both soft tissue and orthopedic surgeries. He is dedicated to ensuring safe procedures and smooth recoveries for every pet.</p>
-            </div>
+      <div data-aos="fade-up-right" data-aos-duration="1400" id="vaccination" class="service-row">
+        <div class="service-image">
+          <img src="Images/vaccination.png" alt="Pet receiving vaccination">
         </div>
+        <div class="service-content">
+          <h3>Vaccination</h3>
+          <p>PawCare provides essential vaccination services to protect your pet against common, severe, and preventable diseases. Drawing on our experience of treating over 1,500 pets, we carefully tailor vaccination schedules to meet the specific needs of your companion. Our preventive care protocols are administered with professional expertise to keep your pet's immune system robust and strong. We view vaccinations as a critical step in nurturing the joyful, healthy bond between you and your furry family member. You can consistently trust our compassionate staff across our 10+ centers to safely and gently administer these life-saving immunizations.</p>
+        </div>
+      </div>
 
-        <div class="vet-card">
-            <img src="Images/Exotic Pet Specialist.png" alt="vet3">
-        <div data-aos="fade-up-right" data-aos-duration="1200" class="vet-card" id="pratyus">
-            <img src="Images/vet3.png" alt="vet3">
-            <div class="card-content">
-                <h2 class="vet-name">Dr. Pratyus Patnaik</h2>
-                <p class="vet-specialty">Avian and Exotic Animal Veterinary</p>
-                <p class="vet-experience">10 Years Experience</p>
-                <p class="vet-intro">From parrots to reptiles, Dr. Patnaik has a gentle touch and extensive knowledge of non-traditional pets. He frequently lectures on exotic animal nutrition and preventative care.</p>
-            </div>
+      <div data-aos="fade-up-left" data-aos-duration="1400" id="surgery" class="service-row">
+        <div class="service-image">
+          <img src="Images/surgery.png" alt="Veterinary surgery room">
         </div>
+        <div class="service-content">
+          <h3>Surgery</h3>
+          <p>When your pet requires specialized surgery, our state-of-the-art care centers in Bhubaneswar are fully equipped to provide the highest standard of medical care. Our surgical team, part of our network of over 50 expert doctors, brings extensive professional expertise to the operating table. We treat your beloved companions exactly how you would, prioritizing their absolute safety, comfort, and swift recovery during every procedure. From routine spays and neuters to complex operations, we utilize advanced medical practices to ensure the most successful outcomes. Post-surgery, we deliver compassionate aftercare to gently support your pet as they heal and return to their happy, active selves.</p>
+        </div>
+      </div>
 
-        <div class="vet-card">
-            <img src="Images/General Practitioner.png" alt="vet4">
-        <div data-aos="fade-up-left" data-aos-duration="1200" class="vet-card" id="suchismita">
-            <img src="Images/vet4.png" alt="vet4">
-            <div class="card-content">
-                <h2 class="vet-name">Dr. Suchismita Singh</h2>
-                <p class="vet-specialty">General Practice & Dentistry</p>
-                <p class="vet-experience">8 Years Experience</p>
-                <p class="vet-intro"> A lifelong dog lover, Dr. Singh focuses on preventative care and comprehensive pet dentistry. She strongly believes that a healthy smile leads to a happier, longer life for your best friend.</p>
-            </div>
+      <div data-aos="fade-up-right" data-aos-duration="1400" id="diagnostics" class="service-row">
+        <div class="service-image">
+          <img src="Images/diagnosis.png" alt="Veterinary diagnostics equipment">
         </div>
+        <div class="service-content">
+          <h3>Diagnostics</h3>
+          <p>PawCare offers advanced diagnostic services to swiftly and accurately uncover any underlying health issues your pet may face. Equipped with modern technology across our 10+ care centers, we can quickly analyze symptoms to provide expert medical answers. Our rigorous diagnostic process ensures that we understand exactly what your pet needs to receive the most effective and personalized treatment. By identifying problems early through careful testing, we minimize your pet's discomfort and rapidly accelerate their path to wellness. Our 50+ doctors rely on these precise diagnostic tools to deliver the targeted, professional care that Bhubaneswar has trusted since 2006.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up-left" data-aos-duration="1400" id="dental" class="service-row">
+        <div class="service-image">
+          <img src="Images/dental.png" alt="Pet dental cleaning">
+        </div>
+        <div class="service-content">
+          <h3>Dental Care</h3>
+          <p>As part of our comprehensive range of services, PawCare delivers thorough dental care to keep your pet's teeth and gums perfectly healthy. We understand that excellent oral health is deeply connected to your pet's overall wellness, comfort, and longevity. Our expert doctors perform routine cleanings, thorough examinations, and necessary dental treatments with infinite patience and gentleness. By actively preventing painful dental disease, we ensure that every meal is enjoyable and every purr or tail-wag is completely pain-free. Trust our professional team to maintain your furry family member's bright smile, further enhancing the joyful bond you share.</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up-right" data-aos-duration="1400" id="emergency" class="service-row">
+        <div class="service-image">
+          <img src="Images/emergency.png" alt="Emergency veterinary care">
+        </div>
+        <div class="service-content">
+          <h3>Emergency</h3>
+          <p>When the unexpected happens, PawCare's emergency care team is ready to step in with immediate, life-saving medical interventions. Our state-of-the-art facilities are fully equipped to handle critical situations with the extreme urgency and advanced care they require. During highly stressful times, our compassionate staff treats your pet with the exact same love and dedication that you would. Leveraging the collective expertise of our 50+ doctors, we work tirelessly to stabilize and treat your pet in their moment of greatest need. As Bhubaneswar's trusted partner in pet wellness, we are always here to fiercely protect and support your furry family members whenever emergencies arise.</p>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-<footer data-aos="flip-up" data-aos-duration="1200" style="background-color: #2a1520;">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>
+
+     <!--footer-->
+     <footer data-aos="flip-up" data-aos-duration="1200" style="background-color: #2a1520;">
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="#" class="footer-logo">🐾 PawCare</a>
@@ -239,10 +256,5 @@
             <span>Made with <i class="fa-solid fa-heart fa-beat" style="color: rgb(245, 41, 95);"></i> for pets · <a href="#">Privacy Policy</a></span>
         </div>
     </footer>
-    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script src="ourvets.js"></script>
-
-</body>
-</html>
+    <script src="services.js"></script>
